@@ -5,3 +5,5 @@ create_ssh_key:
 
 	openssl genrsa -out cert/id_rsa 4096
 	openssl rsa -in cert/id_rsa -pubout -out cert/id_rsa.pub
+
+	ssh-keygen -b 4096 -t rsa
